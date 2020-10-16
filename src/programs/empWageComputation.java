@@ -17,6 +17,12 @@ public class empWageComputation {
         else
             System.out.println("Employee is Absent");
 
+        //uc-2 calculate daily employee wage
+        int wage=utilities.DailyEmpWage();
+        if (wage == 0)
+            System.out.println("Employee is absent then DailyEmpWage:" +wage);
+        else
+            System.out.println("Employee is present then DailyEmpWage:" +wage);
     }
 
 }
