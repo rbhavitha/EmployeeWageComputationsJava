@@ -23,6 +23,14 @@ public class empWageComputation {
             System.out.println("Employee is absent then DailyEmpWage:" +wage);
         else
             System.out.println("Employee is present then DailyEmpWage:" +wage);
+
+
+        //uc-3 calculate part time employee wage
+        int partTimeWage=utilities.PartTimeEmpWage();
+        if (partTimeWage == 0)
+            System.out.println("Employee is absent then PartTimeEmpWage:" +partTimeWage);
+        else
+            System.out.println("Employee is present then PartTimeEmpWage:" +partTimeWage);
     }
 
 }
