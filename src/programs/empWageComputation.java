@@ -10,35 +10,10 @@ public class empWageComputation {
         System.out.println("Welcome To Employee Wage Computation");
 
         Utilities utilities=new Utilities();
-        //uc-1 check employee attendance
-        double attendance = utilities.CheckEmpAttendance();
-        if (attendance == 1)
-            System.out.println("Employee is Present");
-        else
-            System.out.println("Employee is Absent");
 
-        //uc-2 calculate daily employee wage
-        int wage=utilities.DailyEmpWage();
-        if (wage == 0)
-            System.out.println("Employee is absent then DailyEmpWage:" +wage);
-        else
-            System.out.println("Employee is present then DailyEmpWage:" +wage);
-
-
-        //uc-3 calculate part time employee wage
-        int partTimeWage=utilities.PartTimeEmpWage();
-        if (partTimeWage == 0)
-            System.out.println("Employee is absent then PartTimeEmpWage:" +partTimeWage);
-        else
-            System.out.println("Employee is present then PartTimeEmpWage:" +partTimeWage);
-
-        //uc-4 using switch case
-        int salary=utilities.EmpWageSwitch();
-        System.out.println("Salary of employee:" +salary);
-
-        //uc-5 calculating wage for 20 days
-        int empWagePerMonth=utilities.empWagePerMonth();
-        System.out.println("Salary for 20 days:" +empWagePerMonth);
+        //uc-6 calculate wage until total working hours or days reached.
+        int empWageCondition=utilities.empWageCondition();
+        System.out.println("Salary of emp after condition reached: "+empWageCondition);
     }
 
 }
