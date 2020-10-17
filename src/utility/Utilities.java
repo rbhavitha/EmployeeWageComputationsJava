@@ -38,4 +38,26 @@ public class Utilities {
             return empRatePerHr*empHrs;
         return 0;
     }
+    /*
+    @Functionality - calculates the salary of employee using switch
+    @return        - if employee works full time,then returns full time salary
+    @return        - if employee works part time,then returns part time salary
+    @return        - 0,if neither full-time nor part-time
+    */
+    public int EmpWageSwitch(){
+        int isFullTime=1;
+        int isPartTime=2;
+        double empCheck=Math.floor(Math.random()*10)%3;
+        switch ((int) empCheck) {
+            case 1:
+                int fullTimeEmpHrs=8;
+                return empRatePerHr*fullTimeEmpHrs;
+            case 2:
+                int partTimeEmpHrs=4;
+                return empRatePerHr*partTimeEmpHrs;
+            default:
+                return 0;
+        }
+
+    }
 }

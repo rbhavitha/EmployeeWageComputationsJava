@@ -31,6 +31,10 @@ public class empWageComputation {
             System.out.println("Employee is absent then PartTimeEmpWage:" +partTimeWage);
         else
             System.out.println("Employee is present then PartTimeEmpWage:" +partTimeWage);
+
+        //uc-4 using switch case
+        int salary=utilities.EmpWageSwitch();
+        System.out.println("Salary of employee:" +salary);
     }
 
 }
