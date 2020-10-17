@@ -35,6 +35,10 @@ public class empWageComputation {
         //uc-4 using switch case
         int salary=utilities.EmpWageSwitch();
         System.out.println("Salary of employee:" +salary);
+
+        //uc-5 calculating wage for 20 days
+        int empWagePerMonth=utilities.empWagePerMonth();
+        System.out.println("Salary for 20 days:" +empWagePerMonth);
     }
 
 }
