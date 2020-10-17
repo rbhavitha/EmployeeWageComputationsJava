@@ -11,9 +11,8 @@ public class Utilities {
     int isFullTime = 1;
     int isPartTime = 2;
     int totalSalary = 0;
-    double randomCheck = Math.floor(Math.random() * 10) % 2;
     /*
-    @Functionality - calculates employee wage for 20 days
+    @Functionality - calculates employee wage until given condition reached.
     @returns       - total salary
     */
         public int empWageCondition(){
