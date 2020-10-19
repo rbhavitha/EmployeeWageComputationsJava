@@ -10,7 +10,7 @@ public class empWageComputation {
 
     public static void main(String[] args) {
         System.out.println("Welcome To Employee Wage Computation \n");
-        //To calculate employee wage for multiple companies.
+        // To calculate employee wage for multiple companies.
         Utilities company1Details=new Utilities();
         EmpWageObject empObject=new EmpWageObject();
         empObject.setCompany("Reliance");
