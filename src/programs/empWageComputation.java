@@ -1,7 +1,9 @@
 package programs;
+import utility.EmpWageObject;
 import utility.Utilities;
+
 /**@author Bhavitha
-  *Create Date : 17th October 2020
+  *Create Date   : 19th October 2020
   *Functionality : Employee Wage Computations
   */
 public class empWageComputation {
@@ -9,11 +11,15 @@ public class empWageComputation {
     public static void main(String[] args) {
         System.out.println("Welcome To Employee Wage Computation");
 
-        Utilities utilities=new Utilities();
+        //uc-7 Refactor the code to write a class method to compute employee wage
+        Utilities companyDetails=new Utilities();
+        EmpWageObject empObject=new EmpWageObject();
+        empObject.setCompany("LG");
+        empObject.setEmpRatePerHr(20);
+        empObject.setNumWorkingDays(20);
+        empObject.setMaxWorkingHrs(100);
+        companyDetails.WageHrs(empObject.getCompany(),empObject.getEmpRatePerHr(),empObject.getNumWorkingDays(),empObject.getMaxWorkingHrs());
 
-        //uc-6 calculate wage until total working hours or days reached.
-        int empWageCondition=utilities.empWageCondition();
-        System.out.println("Salary of emp after condition reached: "+empWageCondition);
     }
 
 }

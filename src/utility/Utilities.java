@@ -1,38 +1,42 @@
 package utility;
 /**@author Bhavitha
- * Create Date   : 17th October 2020
- * Functionality : This utility file contains logic of code for src.
+ *@ Create Date   : 17th October 2020
+ * @Functionality : This utility file contains logic of code for src.
  */
-
 public class Utilities {
-    int is_Present = 1;
-    int empRatePerHr = 20;
-    int numWorkingDays = 20;
-    int isFullTime = 1;
-    int isPartTime = 2;
-    int totalSalary = 0;
+    int empHrs;
     /*
-    @Functionality - calculates employee wage until given condition reached.
-    @returns       - total salary
-    */
-        public int empWageCondition(){
-            int totalempHrs=0;
-            int totalempWorkDays=0;
-            int maxWorkingHrs=100;
-            int empHrs;
-            while (totalempHrs<maxWorkingHrs && totalempHrs<numWorkingDays){
+    @Fucntionality          : This method contains logic for calculating
+                              employee wage for company
+    @param company          : first input argument
+    @param empRatePerHr     : second input argument
+    @param numWorkingDays   : third input argument
+    @param maxWorkingHrs    :fourth input argument
+    @return                 : returns the total wage
+     */
+    public void WageHrs(String company,int empRatePerHr,int numWorkingDays,int maxWorkingHrs){
+            int totalEmpHrs=0;
+            int totalWage=0;
+            int totalWorkingDays=0;
+            while (totalEmpHrs<maxWorkingHrs && totalWorkingDays<numWorkingDays){
                 double empCheck= Math.floor(Math.random() * 10) % 3;
                 switch ((int) empCheck){
                     case 1:
                         empHrs=8;
-                        totalempHrs=totalempHrs+empHrs;
+                        break;
                     case 2:
                         empHrs=4;
-                        totalempHrs=totalempHrs+empHrs;
+                        break;
                     default:
                         empHrs=0;
+                        break;
                 }
+                totalWorkingDays=totalWorkingDays+1;
+                totalEmpHrs=totalEmpHrs+empHrs;
+                totalWage=totalEmpHrs*empRatePerHr;
             }
-            return totalSalary+(totalempHrs*empRatePerHr);
-        }
-}
+            System.out.println("Company Name:" +company);
+            System.out.println("Employee Working Hours:" +totalEmpHrs);
+            System.out.println("Employee Wage:" +totalWage);
+    }
+}    
