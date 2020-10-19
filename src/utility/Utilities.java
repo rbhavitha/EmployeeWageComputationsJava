@@ -14,7 +14,7 @@ public class Utilities {
     @param maxWorkingHrs    :fourth input argument
     @return                 : returns the total wage
      */
-    public void WageHrs(String company,int empRatePerHr,int numWorkingDays,int maxWorkingHrs){
+    public void Wage(String company,int empRatePerHr,int numWorkingDays,int maxWorkingHrs){
             int totalEmpHrs=0;
             int totalWage=0;
             int totalWorkingDays=0;
@@ -37,6 +37,6 @@ public class Utilities {
             }
             System.out.println("Company Name:" +company);
             System.out.println("Employee Working Hours:" +totalEmpHrs);
-            System.out.println("Employee Wage:" +totalWage);
+            System.out.println("Employee Wage:" +totalWage+ "\n");
     }
 }    

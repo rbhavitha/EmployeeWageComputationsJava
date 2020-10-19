@@ -9,17 +9,22 @@ import utility.Utilities;
 public class empWageComputation {
 
     public static void main(String[] args) {
-        System.out.println("Welcome To Employee Wage Computation");
-
-        //uc-7 Refactor the code to write a class method to compute employee wage
-        Utilities companyDetails=new Utilities();
+        System.out.println("Welcome To Employee Wage Computation \n");
+        //To calculate employee wage for multiple companies.
+        Utilities company1Details=new Utilities();
         EmpWageObject empObject=new EmpWageObject();
-        empObject.setCompany("LG");
+        empObject.setCompany("Reliance");
         empObject.setEmpRatePerHr(20);
         empObject.setNumWorkingDays(20);
         empObject.setMaxWorkingHrs(100);
-        companyDetails.WageHrs(empObject.getCompany(),empObject.getEmpRatePerHr(),empObject.getNumWorkingDays(),empObject.getMaxWorkingHrs());
+        company1Details.Wage(empObject.getCompany(),empObject.getEmpRatePerHr(),empObject.getNumWorkingDays(),empObject.getMaxWorkingHrs());
 
+        Utilities company2Details=new Utilities();
+        empObject.setCompany("D-Mart");
+        empObject.setEmpRatePerHr(20);
+        empObject.setNumWorkingDays(25);
+        empObject.setMaxWorkingHrs(100);
+        company2Details.Wage(empObject.getCompany(),empObject.getEmpRatePerHr(),empObject.getNumWorkingDays(),empObject.getMaxWorkingHrs());
     }
 
 }
