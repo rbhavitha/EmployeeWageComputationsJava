@@ -1,7 +1,8 @@
 package utility;
 /**@author Bhavitha
- *@ Create Date   : 17th October 2020
- * @Functionality : This utility file contains logic of code for src.
+ * Create Date   : 17th October 2020
+ * Modified Date : 22nd October 2020
+ * Functionality : This utility file contains logic of code for src.
  */
 public class Utilities {
     int empHrs;

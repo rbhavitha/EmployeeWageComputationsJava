@@ -4,13 +4,14 @@ import utility.Utilities;
 
 /**@author Bhavitha
   *Create Date   : 19th October 2020
+  *Modified Date : 22nd October 2020
   *Functionality : Employee Wage Computations
   */
 public class empWageComputation {
 
     public static void main(String[] args) {
         System.out.println("Welcome To Employee Wage Computation \n");
-        // To calculate employee wage for multiple companies.
+        // To calculate total wage for each company using one object.
         Utilities company1Details=new Utilities();
         EmpWageObject empObject=new EmpWageObject();
         empObject.setCompany("Reliance");

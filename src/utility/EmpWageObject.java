@@ -1,8 +1,9 @@
 package utility;
 /*
-@author         :bhavitha
-@Created Date   : 19th october
-@Functionality  : contains objects
+*author         :Bhavitha
+*Created Date   : 19th october 2020
+*Modified Date  : 22nd october 2020
+* *Functionality  : contains objects
  */
 public class EmpWageObject {
     private String company;
