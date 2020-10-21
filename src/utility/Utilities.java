@@ -6,13 +6,13 @@ package utility;
 public class Utilities {
     int empHrs;
     /*
-    @Fucntionality          : This method contains logic for calculating
+    Fucntionality          : This method contains logic for calculating
                               employee wage for companies
-    @param company          : first input argument
-    @param empRatePerHr     : second input argument
-    @param numWorkingDays   : third input argument
-    @param maxWorkingHrs    :fourth input argument
-    @return                 : returns the total employee wage
+    param company          : first input argument
+    param empRatePerHr     : second input argument
+    param numWorkingDays   : third input argument
+    param maxWorkingHrs    :fourth input argument
+    return                 : returns the total employee wage
      */
     public void Wage(String company,int empRatePerHr,int numWorkingDays,int maxWorkingHrs){
             int totalEmpHrs=0;

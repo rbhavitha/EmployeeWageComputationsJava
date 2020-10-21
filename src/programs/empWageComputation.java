@@ -3,11 +3,11 @@ import utility.EmpWageObject;
 import utility.Utilities;
 import java.util.ArrayList;
 
-/**@author Bhavitha
-  *Create Date   : 19th October 2020
-  *Modified Date : 22nd OCtober 2020
-  *Functionality : Employee Wage Computations
-  */
+/*author Bhavitha
+ *Create Date   : 19th October 2020
+ *Modified Date : 22nd OCtober 2020
+ *Functionality : Employee Wage Computations
+*/
 public class empWageComputation {
 
     public static void main(String[] args) {
